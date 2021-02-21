@@ -1,0 +1,135 @@
+.tfooter {
+  color: $grey-default;
+  background-color: $white-default;
+  padding-top: 46px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+
+  @media (min-width: 811.8px) {
+    padding-top: 62px;
+    padding-right: 40px;
+    padding-bottom: 32px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: 1559.8px) {
+    padding-top: 32px;
+    padding-right: 120px;
+    padding-bottom: 72px;
+    padding-left: 120px;
+  }
+
+  &__text {
+    @media (min-width: 1559.8px) {
+      display: flex;
+      position: relative;
+    }
+  }
+
+  &__logo {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 46px;
+    text-align: center;
+
+    @media (min-width: 1559.8px) {
+      padding-right: 160px;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__useful {
+    @media (min-width: 811.8px) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+
+    @media (min-width: 1559.8px) {
+      position: absolute;
+      left: 90%;
+      top: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__page {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 32px;
+    cursor: pointer;
+
+    &:hover {
+      color: $frame-hover;
+    }
+
+    @media (min-width: 811.8px) {
+      padding: 0px;
+    }
+
+    @media (min-width: 1559.8px) {
+      padding-bottom: 24px;
+    }
+  }
+
+  &__block {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 24px;
+
+    @media (min-width: 811.8px) {
+      text-align: center;
+      padding-bottom: 32px;
+    }
+
+    @media (min-width: 1559.8px) {
+      text-align: start;
+      width: 380px;
+      padding-right: 30px;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__content {
+    color: $grey-secondary;
+    font-size: 16px;
+    padding-top: 16px;
+    font-weight: 400;
+
+    @media (min-width: 811.8px) {
+      text-align: center;
+    }
+
+    @media (min-width: 1559.8px) {
+      text-align: start;
+    }
+  }
+
+  &__links {
+    padding-top: 8px;
+    color: $frame-focus;
+
+    @media (min-width: 1559.8px) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 48px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 16px;
+    cursor: pointer;
+
+    &:hover {
+      color: $frame-hover;
+    }
+
+    @media (min-width: 1559.8px) {
+      padding: 0px;
+    }
+  }
+}

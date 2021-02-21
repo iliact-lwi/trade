@@ -1,0 +1,18 @@
+.tbutton {
+  font-weight: 500;
+  border-radius: 60px;
+  background-color: $frame-default;
+  line-height: 1;
+  text-align: center;
+  color: $white-default;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+
+  &:hover {
+    background-color: $frame-hover;
+  }
+
+  &:active {
+    background-color: $frame-pressed;
+  }
+}

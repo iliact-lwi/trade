@@ -1,0 +1,113 @@
+.tnavbar {
+  &__container {
+    background-color: $white-default;
+  }
+
+  &__static {
+    display: flex;
+    flex-direction: column;
+    padding: 27.6px 5px;
+    color: $grey-default;
+
+    @media (min-width: 575.8px) {
+      padding: 27.6px 15px;
+    }
+
+    @media (min-width: 811.8px) {
+      padding: 27.6px 30px;
+    }
+
+    @media (min-width: 1339.8px) {
+      padding: 27.6px 45px;
+    }
+
+    @media (min-width: 1559.8px) {
+      padding: 20px 45px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+
+    @media (min-width: 1559.8px) {
+      padding-right: 45px;
+      padding-left: 60px;
+    }
+  }
+
+  &__toggler {
+    cursor: pointer;
+
+    @media (min-width: 1559.8px) {
+      display: none;
+    }
+  }
+
+  &__collapse {
+    display: none;
+    flex-direction: column;
+
+    @media (min-width: 1559.8px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex: auto;
+    }
+  }
+
+  &__collapse.tnavbar__collapse_open {
+    display: flex;
+  }
+
+  &__links {
+    @media (min-width: 1559.8px) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    padding: 8px 0px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $frame-disabled;
+    }
+
+    @media (min-width: 1559.8px) {
+      padding: 0px 15px;
+    }
+  }
+
+  &__panel {
+    @media (min-width: 1559.8px) {
+      display: flex;
+    }
+  }
+
+  &__tlanguage {
+    padding: 15px 0px;
+
+    @media (min-width: 1559.8px) {
+      padding: 0px 25px;
+    }
+  }
+
+  &__sign-in {
+    width: 167px;
+    padding: 13px 0px;
+    font-size: 14px;
+  }
+}

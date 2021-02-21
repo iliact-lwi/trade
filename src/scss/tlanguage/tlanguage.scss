@@ -1,0 +1,56 @@
+.tlanguage {
+  width: 80px;
+  position: relative;
+
+  &_open &__dropdown {
+    display: block;
+  }
+
+  &_close &__dropdown {
+    display: none;
+  }
+
+  &__static {
+    display: flex;
+    justify-content: center;
+    border: 1px solid $black-default;
+    border-radius: 60px;
+    line-height: 1;
+    padding: 11.5px 0px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  &__selected {
+    padding-right: 8px;
+  }
+
+  &__dropdown {
+    width: 100%;
+    background-color: $white-default;
+    border: 1px solid $black-default;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1000;
+    top: 110%;
+    left: 0px;
+  }
+
+  &__dropdown-item {
+    padding: 5px;
+    line-height: 1;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary;
+      color: $light;
+    }
+  }
+
+  &__dropdown-item_selected {
+    background-color: $success;
+    color: $light;
+  }
+}

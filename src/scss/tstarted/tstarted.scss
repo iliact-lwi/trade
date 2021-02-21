@@ -1,0 +1,142 @@
+.tstarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  height: 1480px;
+  background-color: $white-default;
+
+  @media (min-width: 811.8px) {
+    display: block;
+    padding: 120px 40px;
+    height: 1280px;
+  }
+
+  @media (min-width: 1559.8px) {
+    padding: 140px 120px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    color: $grey-default;
+    line-height: 1.1;
+    padding-bottom: 40px;
+    width: 280px;
+
+    @media (min-width: 811.8px) {
+      width: 450px;
+      font-size: 56px;
+      padding-bottom: 56px;
+    }
+
+    @media (min-width: 1559.8px) {
+      padding-bottom: 68px;
+    }
+  }
+
+  &__block_main {
+    position: relative !important;
+  }
+
+  &__block {
+    position: absolute;
+    width: 280px;
+    background-color: $white-default;
+    border: 2px solid $frame-default;
+    border-radius: 30px;
+    padding: 24px;
+
+    @media (min-width: 811.8px) {
+      width: 329px;
+      padding: 32px;
+    }
+
+    @media (min-width: 1559.8px) {
+      width: 483px;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    @media (min-width: 811.8px) {
+      width: 193px;
+      height: 58.5px;
+    }
+
+    @media (min-width: 1559.8px) {
+      width: 374px;
+      height: 69.5px;
+    }
+  }
+
+  &__block_pos-right {
+    top: 108%;
+    left: 0px;
+
+    @media (min-width: 811.8px) {
+      top: 100%;
+      left: 100%;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  &__block_pos-left {
+    top: 108%;
+    right: 0px;
+
+    @media (min-width: 811.8px) {
+      top: 100%;
+      right: 100%;
+      transform: translate(50%, 0%);
+    }
+  }
+
+  &__line_pos-right {
+    top: 0px;
+    left: 0px;
+
+    @media (min-width: 811.8px) {
+      top: 50%;
+      left: 100%;
+      border-top: 2px dotted $frame-default;
+      border-right: 2px dotted $frame-default;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  &__line_pos-left {
+    top: 0px;
+    right: 0px;
+
+    @media (min-width: 811.8px) {
+      top: 50%;
+      right: 100%;
+      border-top: 2px dotted $frame-default;
+      border-left: 2px dotted $frame-default;
+      border-top-left-radius: 20px;
+    }
+  }
+
+  &__number {
+    font-size: 15px;
+    font-weight: 500;
+    color: $frame-default;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: $grey-default;
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $grey-secondary;
+  }
+}

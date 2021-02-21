@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$frame-default: rgba(79, 98, 246, 1);
+$frame-hover: rgba(113, 129, 252, 1);
+$frame-pressed: rgba(53, 75, 244, 1);
+$frame-disabled: rgba(224, 224, 224, 1);
+$frame-focus: rgba(130, 130, 130, 1);
+$frame-success: rgba(14, 172, 0, 1);
+$frame-error: rgba(235, 87, 87, 1);
+
+$white-default: rgba(255, 255, 255, 255);
+$black-default: rgba(0, 0, 0, 1);
+$grey-default: rgba(51, 51, 51, 1);
+$grey-secondary: rgba(79, 79, 79, 1);
+
+$violet-background: rgba(79, 98, 246, 0.1);
+
+@import './_bootstrap/_bootstrap.scss';
+@import './tnavbar/tnavbar.scss';
+@import './tlanguage/tlanguage.scss';
+@import './home/home.scss';
+@import './tintro/tintro.scss';
+@import './tbutton/tbutton.scss';
+@import './tstarted/tstarted.scss';
+@import './tcomments/tcomments.scss';
+@import './tfaq/tfaq.scss';
+@import './tcontact/tcontact.scss';
+@import './tfooter/tfooter.scss';
+
+.app {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+
+  &__tnavbar {
+    position: absolute;
+    z-index: 900;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+.dedicated {
+  background-color: $violet-background;
+}
